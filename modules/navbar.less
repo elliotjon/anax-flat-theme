@@ -1,15 +1,26 @@
 
-
-.border(@radius: 0) {
-    border-radius: @radius;
-    border: 1px solid darken(#97bebd, 15%);
-}
+/** NAVBAR TOP */
 
 .navbar2 {
     display:inline-block;
     margin-left: 15px;
 
     & li {
-        .border(10px);
+        font-variant: small-caps;
+        &:hover {
+            background-color: lighten(#97bebd, 15%);
+            font-variant: small-caps;
+        }
+    }
+
+}
+
+
+
+/** MEDIA */
+
+@media screen and (max-width: 1000px) {
+    .navbar2 {
+        display: none;
     }
 }
