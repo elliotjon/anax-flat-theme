@@ -1,9 +1,19 @@
-/** 
+/**
 * Anax Flat theme.
 */
 @import url(modules.less);
 
+body {
+    background-color: #000;
+}
 
+.site-header {
+    background-color: #97bebd;
+}
+
+.flash-wrap img {
+    width: 100%;
+}
 
 /** --------------------------------------------------------------
  *  Logo images
@@ -17,5 +27,27 @@
 .site-logo-text-icon {
     img {
         vertical-align: bottom;
+    }
+}
+
+.after-main {
+    background-color: lighten(#97bebd, 15%);
+    max-width: 950px;
+    width: 950px;
+    margin: auto;
+    height: 90px;
+    text-align: left;
+    overflow: auto;
+    & img {
+        width: 50px;
+        display: block;
+        float: left;
+        padding-right: 5px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .logo-1 {
+        display: none;
     }
 }

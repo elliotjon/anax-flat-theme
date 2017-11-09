@@ -1,0 +1,15 @@
+
+
+.border(@radius: 0) {
+    border-radius: @radius;
+    border: 1px solid darken(#97bebd, 15%);
+}
+
+.navbar2 {
+    display:inline-block;
+    margin-left: 15px;
+
+    & li {
+        .border(10px);
+    }
+}
