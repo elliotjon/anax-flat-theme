@@ -3,24 +3,25 @@
 
 .navbar2 {
     display:inline-block;
-    margin-left: 15px;
+    //margin-left: 0;
+    & ul {
+        list-style: none;
+    }
 
     & li {
+        text-decoration: none;
         font-variant: small-caps;
+        width: 60px;
+        margin-right: @gutterWidth - 2.5px;
+        text-align: center;
+        margin-left: 0;
         &:hover {
             background-color: lighten(#97bebd, 15%);
             font-variant: small-caps;
         }
     }
-
-}
-
-
-
-/** MEDIA */
-
-@media screen and (max-width: 1000px) {
-    .navbar2 {
-        display: none;
+    & a {
+        padding: 0;
     }
+
 }

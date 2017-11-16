@@ -1,0 +1,169 @@
+@import url(grid/grid-float.less);
+
+
+body a {
+    color: black;
+}
+
+
+.row {
+    .row();
+}
+
+.sidebar {
+    .column(2);
+}
+
+//.outer-wrap-header,
+.outer-wrap-main,
+//.outer-wrap-after-main,
+.footer-column-wrapper {
+    margin-bottom: @magicNumber;
+}
+
+.footer-column-wrapper {
+    .clearfix();
+}
+
+.outer-wrap-flash {
+    background-color: #97bebd;
+}
+
+.logo-1 {
+    position: absolute;
+    left: 100px;
+    top: 100px;
+}
+
+.site-logo-text {
+    .column(3);
+}
+
+.navbar2 {
+    .column(9);
+    float: right;
+
+}
+
+.sidebar {
+    .column(2);
+    //position: absolute;
+    float: left;
+    & li {
+        list-style: none;
+    }
+}
+
+.main {
+    .column(10);
+    .push(1);
+    &.has-sidebar-left {
+        float: right;
+        .push(0);
+    }
+}
+
+.next-previous {
+    text-align: center;
+    & .next {
+        float: right;
+    }
+    & .previous {
+        float: left;
+    }
+}
+
+.outer-wrap-after-main {
+    background-color: #97bebd;
+}
+.after-main {
+    .clearfix();
+    .column(10);
+    .push(1);
+    padding-bottom: @magicNumber;
+    img {
+        .column(2);
+    }
+}
+
+
+.outer-wrap-footer {
+    background-color: #97bebd;
+}
+
+
+.footer-column {
+    .column(4);
+    background-color: #a3ccc9;
+}
+
+.site-footer {
+    .column(12);
+    text-align: center;
+
+    a {
+        list-style: none;
+        color: black;
+    }
+}
+
+/** MEDIA */
+
+@media screen and (max-width: 1400px) {
+    .logo-1 {
+        position: absolute;
+        left: 30px;
+        top: 60px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .logo-1 {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    .site-logo-text {
+        display: none;
+    }
+
+    .navbar2 {
+        .column(10);
+        .push(1);
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .sidebar {
+        display: none;
+    }
+    .main {
+        width: auto;
+        .column(12);
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .navbar2 {
+        .column(12);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .navbar2 {
+        display: none;
+    }
+
+    .footer-column h4 {
+        display: none;
+    }
+
+@media screen and (max-width: 400px) {
+    .flash-wrap img {
+        display: none;
+    }
+}
+}
