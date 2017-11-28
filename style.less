@@ -1,78 +1,44 @@
 /**
-* Anax Flat theme.
+* Anax Flat default theme.
 */
-@import url(modules.less);
+@import url(base.less);
+
+@body_color: #C8DFDE;
+@wrap-all-color: #97bebd;
+@header_color: #a3ccc9;
+@hover_color: #97bebd;
+@column_color: #a3ccc9;
+@a_color: #000;
+@a_hover: #649896;
 
 
-
-.site-header {
-    background-color: #97bebd;
+body {
+    background-color: @body_color;
 }
-
-.flash-wrap img {
-    width: 100%;
-    height: 100%;
-}
-
-
-
-/** --------------------------------------------------------------
- *  Logo images
- */
-/**.logo-1 {
-    position: absolute;
-    top: 70px;
-    left: -140px;
-}*/
-
-/**.site-logo-text-icon {
-    img {
-        vertical-align: bottom;
+body a {
+    color: @a_color;
+    &:hover {
+        color: @a_hover;
     }
-}*/
-
-/** MAIN */
-
-/**.main {
-    padding-left: 10px;
-    padding-right: 10px;
-}*/
-
-
-/**.after-main {
-    background-color: lighten(#97bebd, 15%);
-    max-width: 950px;
-    width: 100%;
-    margin: auto;
-    padding-bottom: 0;
-    height: @magicNumber * 4;
-    text-align: left;
-    overflow: hidden;
-    & img {
-        width: 50px;
-        display: block;
-        float: left;
-        padding-right: 5px;
-    }
-    & .content {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-}*/
-
-/** FOOTER */
-
-.footer-column-1 {
-    padding-left: 10px;
-    padding-right: 10px;
 }
 
-.footer-column-2 {
-    padding-left: 10px;
-    padding-right: 10px;
+.wrap-all {
+    background-color: @wrap-all-color;
 }
 
-.footer-column-3 {
-    padding-left: 10px;
-    padding-right: 10px;
+.outer-wrap-header {
+    background-color: @header_color;
+}
+
+.navbar2 li:hover {
+    background-color: @hover_color;
+}
+
+
+
+
+
+
+.footer-column {
+    background-color: @column_color;
 }

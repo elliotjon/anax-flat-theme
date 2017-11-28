@@ -1,14 +1,23 @@
-@import url(grid/grid-float.less);
 
+@import url(modules.less);
 
-body a {
-    color: black;
+.wrap-all {
+    max-width: 1000px;
+    margin:auto;
 }
 
 
 .row {
     .row();
 }
+
+.flash-wrap {
+    height: auto;
+    & img {
+        .column(12)!important;
+    }
+}
+
 
 .sidebar {
     .column(2);
@@ -25,9 +34,7 @@ body a {
     .clearfix();
 }
 
-.outer-wrap-flash {
-    background-color: #97bebd;
-}
+
 
 .logo-1 {
     position: absolute;
@@ -36,13 +43,15 @@ body a {
 }
 
 .site-logo-text {
-    .column(3);
+    .column(2);
 }
 
 .navbar2 {
-    .column(9);
-    float: right;
-
+    .column(10);
+    float: left;
+    & li {
+        list-style: none;
+    }
 }
 
 .sidebar {
@@ -73,9 +82,7 @@ body a {
     }
 }
 
-.outer-wrap-after-main {
-    background-color: #97bebd;
-}
+
 .after-main {
     .clearfix();
     .column(10);
@@ -86,30 +93,64 @@ body a {
     }
 }
 
-
-.outer-wrap-footer {
-    background-color: #97bebd;
+.colorcontainer {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: @magicNumber;
 }
+.cblock {
+    width: 30px;
+    height: 30px;
+    margin: 3px;
+    border: 1px, solid;
 
-
-.footer-column {
-    .column(4);
-    background-color: #a3ccc9;
 }
-
 .site-footer {
     .column(12);
     text-align: center;
 
     a {
         list-style: none;
-        color: black;
     }
 }
 
+.flash-wrap img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/** FOOTER */
+
+.footer-column {
+    .column(4);
+}
+
+.footer-column-1 {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.footer-column-2 {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.footer-column-3 {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.canalys img {
+    .column(12);
+    float:right;
+    position: relative;
+    padding-bottom: @magicNumber;
+}
 /** MEDIA */
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1450px) {
     .logo-1 {
         position: absolute;
         left: 30px;
@@ -130,13 +171,15 @@ body a {
     }
 
     .navbar2 {
-        .column(10);
-        .push(1);
+        .column(11);
     }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 712px) {
     .sidebar {
+        display: none;
+    }
+    .navbar2 {
         display: none;
     }
     .main {
@@ -146,16 +189,8 @@ body a {
 
 }
 
-@media screen and (max-width: 600px) {
-    .navbar2 {
-        .column(12);
-    }
-}
-
 @media screen and (max-width: 500px) {
-    .navbar2 {
-        display: none;
-    }
+
 
     .footer-column h4 {
         display: none;
