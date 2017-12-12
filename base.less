@@ -1,8 +1,13 @@
 
 @import url(modules.less);
 
+.route-blogg h1 {
+    & a {
+        font-size: 60%;
+    }
+}
 .wrap-all {
-    max-width: 1000px;
+    max-width: 980px;
     margin:auto;
 }
 
@@ -12,8 +17,10 @@
 }
 
 .flash-wrap {
-    height: auto;
+    height: 250px;
     & img {
+        filter: grayscale(100%);
+        object-fit:cover;
         .column(12)!important;
     }
 }
