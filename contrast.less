@@ -1,0 +1,126 @@
+
+@import url(style.less);
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Ubuntu:500');
+@body_color: #EEF0E4;
+@wrap-all-color: #1F1F20;
+@header_color: #1F1F20;
+@hover_color: #282828;
+@column_color: #1F1F20;
+@a_color: #000;
+@a_hover: #F3D1E9;
+@body_text: #B7B7B5;
+@navbarMenuButtonColor: yellow;
+
+@borderSizeH1: 3px;
+@borderSizeH2: 1px;
+
+@colorH1BorderBottom: #EEF0E4;
+@colorH2BorderBottom: #EEF0E4;
+
+.route-typography .inner-wrap-breadcrumb {
+    color: #000;
+    & a {
+        color: #000;
+    }
+}
+
+.route-typography .inner-wrap-main {
+    color: #000;
+    & a {
+        color: #000;
+    }
+    & p {
+        color: #000;
+    }
+
+    & h1, h2, h3, h4, h5, h6 {
+        color: #000;
+    }
+}
+
+.flash-wrap img:hover {
+    filter: grayscale(0%);
+}
+
+
+
+nav.navbar2 a {
+    color: #999;
+    &:hover {
+        color: #fff;
+        text-decoration: none;
+    }
+    &:active {
+        color: @a_hover;
+    }
+}
+
+.outer-wrap-header {
+    background: #2E2E2E; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#5b5a5a, #111111); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#5b5a5a, #111111); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#5b5a5a, #111111); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#5b5a5a, #111111); /* Standard syntax */
+}
+
+.main {
+    .column(12);
+    &.has-sidebar-left {
+        .column(10);
+        float: right;
+        .push(0);
+    }
+    &.has-sidebar-right {
+        .column(10);
+        float: left;
+        .push(0);
+    }
+}
+
+.route-typography .inner-wrap-main {
+    color: #000;
+    & a {
+        color: #000;
+    }
+}
+
+html {
+    background-image: url("../img/dgrey023.gif");
+}
+
+.wrap-all {
+    background: #2E2E2E; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#111111, #2E2E2E); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#111111, #2E2E2E); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#111111, #2E2E2E); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#111111, #2E2E2E); /* Standard syntax */
+}
+
+body {
+    max-width: 990px;
+    margin:auto;
+    color: @body_text;
+    & a {
+        color: @body_text;
+        font-family: 'Montserrat', sans-serif;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    & li a {
+        color: @body_text;
+    }
+
+    & p {
+        font-family: 'Montserrat', sans-serif;
+        text-transform: none;
+        color: @body_text;
+    }
+
+    & h1, h2, h3, h4, h5, h6 {
+        font-family: 'Ubuntu', sans-serif;
+        text-transform: uppercase;
+        color: #EEF0E4;
+    }
+}

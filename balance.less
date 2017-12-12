@@ -1,0 +1,46 @@
+@import url(typography.less);
+
+@body_color: #e9e9e9;
+@wrap-all-color: #fff;
+@header_color: #fff;
+@hover_color: #fff;
+@column_color: #fff;
+@a_color: #000;
+@a_hover: #BC8F8F;
+
+nav.navbar2 a {
+    &:hover {
+        color: @a_hover;
+        text-decoration: none;
+    }
+}
+
+.inner-wrap-flash {
+    width: 960px;
+    height: 250px;
+    display: block;
+    position: relative;
+}
+
+.inner-wrap-flash::after {
+    content: "";
+    background-color: #bc8f8f;
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: 0;
+}
+
+.inner-wrap-after-main {
+    border: 1px solid #BC8F8F;
+    border-radius: 3px;
+}
+
+.footer-column {
+    border: 1px solid #BC8F8F;
+    border-radius: 3px;
+    margin: 9px;
+}

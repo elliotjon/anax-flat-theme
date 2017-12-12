@@ -1,0 +1,60 @@
+/**
+* Anax Flat picture theme.
+*/
+@import url(base.less);
+@import url('https://fonts.googleapis.com/css?family=Quicksand|Lora|Sacramento');
+
+@body_color: #fff;
+@wrap-all-color: rgba(237,237,237,0.7);;
+@header_color: rgba(246,246,246,0.3);
+@hover_color: #ededed;
+@column_color: rgba(246,246,246,0.3);
+@a_color: #000;
+@a_hover: #777;
+
+@fontFamilyHeadings: 'Lora', serif;
+@fontFamilyBody: 'Quicksand', sans-serif;
+
+
+
+html {
+    background: url("../img/stephen.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body a {
+    color: @a_color;
+    &:hover {
+        color: @a_hover;
+    }
+}
+
+body h1 {
+    font-family: 'Sacramento', cursive;
+}
+
+.wrap-all {
+    background-color: @wrap-all-color;
+}
+
+.outer-wrap-header {
+    background-color: @header_color;
+}
+
+.navbar2 li:hover {
+    background-color: @hover_color;
+}
+
+
+.author-byline {
+    background-color: @body_color;
+}
+
+
+
+.footer-column {
+    background-color: @column_color;
+}

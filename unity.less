@@ -1,0 +1,50 @@
+@import url(contrast.less);
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300');
+
+html {
+    background-image: none;
+    background-color: #1F1F20;
+}
+
+body {
+    max-width: 1200px;
+    background: #1F1F20; /* For browsers that do not support gradients */
+    /* For Safari 5.1 to 6.0 */
+    background: -webkit-linear-gradient(left,#1F1F20,#676767,#1F1F20);
+    /* For Opera 11.1 to 12.0 */
+    background: -o-linear-gradient(left,#1F1F20,#676767,#1F1F20);
+    /* For Fx 3.6 to 15 */
+    background: -moz-linear-gradient(left,#1F1F20,#676767,#1F1F20);
+    /* Standard syntax */
+    background: linear-gradient(to right, #1F1F20,#676767,#1F1F20);
+
+    & h1, h2, h3, h4, h5, h6 {
+        font-weight: 200;
+    }
+
+    & a {
+        color: #808078;
+    }
+}
+
+.flash-wrap img {
+    filter: grayscale(0%);
+}
+
+.wrap-all {
+    background: #1F1F20;
+}
+
+.outer-wrap-header {
+    background: #1F1F20;
+}
+
+nav.navbar2 a:hover {
+    text-decoration: underline;
+    -webkit-text-decoration-color: #1EB7D9; /* safari still uses vendor prefix */
+    text-decoration-color: #1EB7D9;
+}
+
+.footer-column {
+    text-align: center;
+}
